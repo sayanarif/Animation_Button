@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="2"
+    tools:context=".MainActivity">
+    <LinearLayout
+      android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <br.com.bloder.magic.view.MagicButton
+            android:id="@+id/magic_button1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:magic_button_size="40dp"
+            app:button_icon="@drawable/store"
+            app:button_icon_width="25dp"
+            app:button_icon_height="25dp"
+            app:hide_text="Make Shop"
+            app:icon_button_color="#356099"
+            app:expandable_area_color="#ef2042"/>
+        <br.com.bloder.magic.view.MagicButton
+            android:id="@+id/magic_button2"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:magic_button_size="40dp"
+            app:button_icon="@drawable/customer"
+            app:button_icon_width="25dp"
+            app:button_icon_height="25dp"
+            app:hide_text="Be Customer"
+            app:icon_button_color="#fd995555"
+            app:expandable_area_color="#2f24f2"/>
+        <br.com.bloder.magic.view.MagicButton
+            android:id="@+id/magic_button3"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:magic_button_size="40dp"
+            app:button_icon="@drawable/supplier"
+            app:button_icon_width="25dp"
+            app:button_icon_height="25dp"
+            app:hide_text="Be Supplier"
+            app:icon_button_color="#e7d230"
+            app:expandable_area_color="#f525e1"/>
+</LinearLayout>
+</LinearLayout>
